@@ -1,0 +1,200 @@
+@import 'css/reset.css';
+/*фон, шрифт, цвет шрифта, ссылки*/
+body{background:#eaeaea url(images/content-bg.png);font:16px Tahoma,Georgia,serif;color:#333333;line-height:22px;}
+a{text-decoration:underline;color:#d42455}
+a:hover{color:#777;text-decoration:underline}
+/*контейнер*/
+#container{width:1100px;margin:30px auto 0px;padding:0px 0 0 0;background:#FFFFFF;position:relative;box-shadow:3px 6px 7px 1px rgba(0,0,0,0.4);-moz-box-shadow:3px 6px 7px 1px rgba(0,0,0,0.4);-webkit-box-shadow:3px 6px 7px 1px rgba(0,0,0,0.4)}
+/*шапка*/
+#header{width:1100px;margin:0px auto 0;height:101px;background:url(images/header.jpg) top center no-repeat;position:relative}
+/*заголовок сайта*/
+.logo a{font-size:34px;width:600px;height:55px;line-height:36px;display:block;margin:30px 0 0 30px;padding:0;float:left;color:#eaeaea;font-family:'Lobster',Tahoma;font-weight:normal;text-shadow:1px 1px 1px #000000;text-decoration:none}
+.logo a:first-letter {color:#d42455;}
+/*основная колонка*/
+#content{width:770px;margin:20px 15px 0 0;padding:5px 0 0 0;float:left}
+.post{padding:10px 0px 20px 0px;margin:0 12px 20px 30px;border-bottom:2px dashed #ccc}
+.page-post{padding:10px 30px 10px 30px;margin:0}
+.sticky {border-bottom:2px dashed #d42455}
+/*списки основной колонки*/
+.post ul{padding:0}
+.post ul li {list-style-type:none;margin:0px 0px 5px 0px;padding:0 0 0 25px;background:url(images/li2.gif) 0px 8px no-repeat}
+.post ul li a{color:#161616;padding:0 0 0 10px}
+.post ul li a:hover{text-decoration:none}
+.post ul li a{text-decoration:underline}
+.post ul li a:hover{color:#d42455;text-decoration:none;text-shadow:1px 1px 1px #fff}
+.post ul li ul li{margin:10px 0 0px 0}
+/*популярные записи сайдбар*/
+.popular ul li{
+ line-height:16px;
+ display:block;
+ /*font-weight:bold;*/
+ border-bottom:1px solid #ECECEC;
+ padding:15px 0px 20px 0px;
+ height:60px;
+ font-size:14px;
+}
+.popular ul li img {
+    width: 55px;
+    height: 55px;
+    padding: 2px;
+    float: left;
+    margin: 0 13px 0 0px;
+    background: #FFFFFF;
+    border: 1px solid #D0D0BB;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #666666;
+}
+.popular li img:hover {
+    border: 1px solid #ffffff;
+    padding: 2px;
+    margin: 0 5px 0 4px;
+}
+/*заголовки*/
+h1,h2,h3,h4,h5,h6{margin:0 0 15px 0;font-family:Times New Roman, Times, serif;font-weight:normal}
+h1{font-size:28px}
+h2{font-size:24px}
+h3{font-size:20px}
+h4{font-size:19px}
+h5{font-size:18px}
+h6{font-size:16px}
+h2{line-height:26px}
+h2 a,h2 a:visited{color:#222;text-decoration:none}
+h2 a:hover{color:#d42455;text-decoration:underline}
+/*блок об авторе*/
+.author{margin:30px 0 40px 0;padding:15px 15px 20px 15px;background:#eaeaea;font-size:13px;border:1px solid#ddd;text-shadow:1px 1px 1px #FFFFFF}
+/*метаданные поста*/
+.checkdate{background-image:url(images/cal.gif);background-position:0px 0px;background-repeat:no-repeat;font-size:13px;color:#8e8d8d}
+.meta{margin:0 0 10px 0;padding:0;color:#666}
+.comm{background-image:url(images/comm.gif);background-position:0px 0px;background-repeat:no-repeat;font-size:13px;color:#8e8d8d}
+.meta a{text-decoration:underline;color:#777}
+.meta a:hover{color:#d42455;text-decoration:underline}
+/*боковая колонка*/
+#sidebar{width:300px;margin:25px 0 0 0;padding:5px 0 0 0;float:left;text-shadow:1px 1px 1px #FFFFFF}
+/*заголовки блоков в сайдбаре*/
+.title{background:url(images/title.png) no-repeat;width:301px;height:56px;position:absolute;top:0;left:0}
+.title h4,.title2 h4{color:#ffffff;text-shadow:1px 1px 1px #000000;padding:8px 0 5px 20px;font-size:26px}
+/*блоки сайдбара*/
+.widgetreklama{margin-bottom:40px}
+.widget{padding:60px 10px 20px 20px;margin-bottom:40px;font-size:14px;background:#eaeaea;position:relative}
+.widgetsoc{margin-bottom:40px;font-size:14px;background:#eaeaea;position:relative}
+.widget ul{list-style-type:none;margin:0px 0px 15px 0px;padding:0}
+.widget ul li{list-style-type:none;margin:0px 0px 5px 0px;padding:0 0 0 25px;background:url(images/li.gif) 0px 8px no-repeat}
+.widget li ul{list-style:none;display:block;padding:10px 0px 0px 0px}
+.widget ul li ul li{list-style:none;display:block;padding:0px 0px 0px 25px;background:url(images/li.gif) 0px 8px no-repeat}
+.widget a{text-decoration:none;color:#333}
+.widget a:hover{text-decoration:underline;color:#d42455}
+.wid-shadow{background:url(images/shadow2.png) no-repeat;width:279px;height:11px;position:absolute;bottom:-11px;left:10px;}
+/*подвал*/
+#footer{width:960px;background:url(images/foot.jpg);color:#888;text-shadow:1px 1px 1px #000;position:relative}
+/*заголовки подвала*/
+.foot-title h4{color:#ddd;text-shadow:1px 1px 1px #000000;padding:8px 0 12px 0px;background:url(images/foottitlebg.gif) left bottom repeat-x}
+/*блоки подвала*/
+.foot-widget1{margin:30px 40px 35px 30px;float:left;display:block;width:270px}
+.foot-widget2{margin:30px 0 35px 0px;float:left;display:block;width:270px}
+.foot-widget3{margin:30px 30px 35px 0;float:right;display:block;width:270px}
+/*списки подвала*/
+#footer ul{list-style-type:none;margin:0px 0px 15px 0px;padding:0}
+#footer ul li{list-style-type:none;margin:0px 0px 5px 0px;padding:0 0 0 25px;background:url(images/li.gif) 0px 8px no-repeat}
+#footer li ul{list-style:none;display:block;padding:10px 0px 0px 0px}
+#ooter ul li ul li{list-style:none;display:block;padding:0px 0px 0px 25px;background:url(images/li.gif) 0px 8px no-repeat}
+#footer a{text-decoration:none;color:#888}
+#footer a:hover{text-decoration:underline; color:#d42455}
+/*форматирование картинок*/
+.aligncenter{display:block;margin-top:5px;margin-left:auto;margin-right:auto;margin-bottom:20px}
+.alignleft{float:left;margin:5px 20px 0px 0}
+.alignright{float:right;margin:5px 0 0px 20px}
+.wp-caption{border:1px solid #ddd;text-align:center;padding:10px 4px 0px 4px;background:#f4f2ef none;margin-bottom:2px;}
+.wp-caption img{margin:0;padding:0;border:0 none}
+.wp-caption-text{font-size:10px;line-height:17px;padding:7px 5px;margin:0}
+/*поиск*/
+#searchform{display:block;margin:37px 5px 0px 0px;padding:0;border:none;position:relative;float:right}
+#s{font:12px Georgia,serif;text-transform:lowercase;font-style:italic;font-weight:normal;padding:0px 0 0 10px;margin:0px 50px 0 0;color:#6a6d6e;border:none;width:231px;height:32px;background:transparent url(images/searchbar.png) 0 0 no-repeat}
+#searchsubmit{background:url(images/searchbutton.png) no-repeat 0 0;border:none;cursor:pointer;display:block;width:45px;height:32px;position:absolute;right:20px;top:0px;text-indent:-9999px}
+/*комментарии*/
+.comments-box{padding:30px 30px 0px 30px}
+.comments-box img{}
+#respond{margin:20px 0px 0px 0px;padding:5px}
+#respond p{color:#666;margin:0px 0px 0px 0px}
+.cancel-comment-reply{padding:5px 0px 0px 0px;font-size:10px}
+.cancel-comment-reply a{color:#666}
+.cancel-comment-reply a:hover{color:#990000}
+.text{border:1px solid #DDDDDD;padding:2px;color:#666;width:200px}
+ol.commentlist a:link{text-decoration:none}
+ol.commentlist li div.vcard cite.fn a.url:hover{text-decoration:none}
+ol.commentlist{margin:25px 0px 0px 0px;padding:0px}
+ol.commentlist li{margin:0px 0px 10px 0px;padding:15px;list-style-type:none;border:1px dotted #CCCCCC;background:#fff}
+ol.commentlist li.alt{}
+ol.commentlist li.bypostauthor p{}
+ol.commentlist li.byuser{}
+ol.commentlist li.comment-author-admin{}
+ol.commentlist li.comment{}
+ol.commentlist li div.comment-author{}
+ol.commentlist li div.vcard{}
+ol.commentlist li div.vcard cite.fn{font-style:normal;font-weight:bold}
+ol.commentlist li div.vcard cite.fn a.url{color:#222222}
+ol.commentlist li div.vcard img.avatar{float:left;margin:0px 10px 5px 0px}
+ol.commentlist li div.vcard img.avatar-32{border-right:1px solid #dedcdc;border-bottom:1px solid #dedcdc;padding:5px;background:#f8f6f6}
+ol.commentlist li div.vcard img.photo{padding:2px;border:1px solid #DDDDDD;background:#FFFFFF}
+ol.commentlist li div.vcard span.says{color:#666}
+ol.commentlist li div.commentmetadata{}
+ol.commentlist li div.comment-meta{margin:3px 0px 0px 0px;font-size:12px}
+ol.commentlist li div.comment-meta a{color:#666;text-decoration:none}
+ol.commentlist li p{margin:15px 0px 0px 0px}
+ol.commentlist li ul{}
+ol.commentlist li div.reply{margin:10px 0px 0px 0px;line-height:18px}
+ol.commentlist li div.reply a{background:#F8F8F8;width:45px;height:18px;padding:2px 5px 2px 5px;border:1px solid #DDD;font-size:11px;color:#000 !important}
+ol.commentlist li div.reply a:hover{background:#f4f4f4;border:1px solid #888;color:#000 !important;text-decoration:none}
+ol.commentlist li ul.children{}
+ol.commentlist li ul.children li{margin:10px 0px 0px 0px;border:1px dotted #CCCCCC;background:#FFFFFF}
+ol.commentlist li ul.children li li.alt{background:#ffffff}
+ol.commentlist li ul.children li.bypostauthor{}
+ol.commentlist li ul.children li.byuser{}
+ol.commentlist li ul.children li.comment{}
+ol.commentlist li ul.children li.comment-author-admin{}
+ol.commentlist li ul.children li.depth-2{}
+ol.commentlist li ul.children li.depth-3{}
+ol.commentlist li ul.children li.depth-4{}
+ol.commentlist li ul.children li.depth-5{}
+ol.commentlist li ul.children li.odd{}
+ol.commentlist li.even{}
+ol.commentlist li.odd{}
+ol.commentlist li.parent{}
+ol.commentlist li.pingback{}
+ol.commentlist li.thread-alt{}
+ol.commentlist li.thread-even{}
+ol.commentlist li.thread-odd{}
+#commentform{font:12px Tahoma,Arial}
+#commentform input{width:210px;margin:7px 3px 0px 0px;padding:5px;border:1px solid #DDDDDD}
+#commentform .author{padding:3px 3px 3px 5px;background:#FFFFFF;color:#666}
+#commentform .email{padding:3px 3px 3px 5px;color:#666}
+#commentform .url{padding:3px 3px 3px 5px;color:#666}
+#commentform textarea{width:100%;height:150px;margin:7px 0px 0px 0px;padding:2px;border:1px solid #DDDDDD;font:12px Tahoma,Arial}
+#commentform .submit{background:#F8F8F8;width:150px;margin:7px 0px 0px 0px;padding:4px;color:#666666;font-weight:bold;cursor:pointer;border:1px solid #DDDDDD}
+#commentform .submit:hover{background:#f4f4f4;border:1px solid #666;text-decoration:none;color:#000;text-shadow:1px 1px 1px #ffffff}
+/*строка копирайта*/
+.credits{color:#777;width:940px;/*height:35px;*/margin:0 auto 40px;font-size:11px;text-shadow:1px 1px 1px #fff}
+.credits p{/*padding:20px 0 0 0;*/line-height:14px}
+.credits a{color:#777;text-decoration:none}
+.credits a:hover{color:#d42455;text-decoration:underline}
+.warning {color:black;width:940px;height:35px;margin:0 auto 40px;font-size:12px;text-shadow:1px 1px 1px #fff}
+.warning p{padding:20px 0 0 0;line-height:14px}
+#subbox {width: 220px;color: #333;font-size: 12px;font-family: Tahoma, Verdana;font-weight: normal;margin: 5px 0px 0px 0px;padding: 5px;border:1px solid #ddd;display: inline;}
+#subbutton {background: #B45F66 !important;color: #FFFFFF;font-family: Times New Roman, Times, serif;font-size: 13px;font-weight: normal !important;text-decoration: none;margin: 0px 0px 0px 7px;padding: 3px 4px 3px 4px !important;text-shadow:1px 1px 1px #000;cursor:pointer;border:none;}
+/*уголки*/
+.corn1{position:absolute;width:16px;height:16px;bottom:-15px;left:20px;background:transparent url(images/corn.png) no-repeat;z-index:100}
+.corn2{position:absolute;width:16px;height:16px;top:-16px;right:30px;background:transparent url(images/corn2.png) no-repeat;z-index:100}
+/*горизонтальное меню*/
+#main_menu {clear: both;font-size: 11pt;height: 20px;padding: 14px 0px;overflow: hidden;background: #B15A60;border: 1px solid #fff;border-bottom: none;}
+#main_menu ul {clear: both;margin: 0;padding: 0px;}
+#main_menu ul li {float: left;list-style: none;padding: 0 10px;text-transform:uppercase;}
+#main_menu a {color: #fff;padding: 0 10px;text-decoration: none;}
+#main_menu .sub-menu {display: none;position: absolute;margin: 0;padding: 10px !important;border-radius: 0 0 4px 4px;-moz-border-radius: 0 0 4px 4px;-webkit-border-radius: 0 0 4px 4px;z-index: 999999;}
+#main_menu ul li:hover .sub-menu  {display: block;clear: both;position: absolute;background: #B15A60;}
+#main_menu .sub-menu li {text-transform:none;clear: both;}
+#main_menu a:hover {text-decoration: underline;}
+/* Хлебные крошки "breadcrumbs" */
+.breadcrumbs {margin: 10px 0 0 30px;}
+.breadcrumbs a{	margin:auto;border-bottom: hidden;text-transform:uppercase;text-decoration:none;color: #000000;}
+.breadcrumbs a:hover {text-decoration:none;color: #d42455;}
+/* Форма для скрытия каментов */
+.comm1 {display: none;}

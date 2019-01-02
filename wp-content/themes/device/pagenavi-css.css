@@ -1,0 +1,56 @@
+/* pagination */
+
+.wp-pagenavi{
+text-align:left;
+font-size:10px;
+margin:25px 0 40px 25px;
+}
+
+
+.wp-pagenavi a, .wp-pagenavi a:link {
+	padding: 3px 5px 3px 5px; 
+	margin: 2px;
+	text-decoration: none;
+	border: 1px solid #999;
+	color: #000;
+}
+.wp-pagenavi a:visited {
+	padding: 3px 5px 3px 5px; 
+	margin: 2px;
+	text-decoration: none;
+	border: 1px solid #999;
+	color: #000;
+}
+.wp-pagenavi a:hover {	
+	border: 1px solid #999;
+		color: #ffffff;
+	background: #293341;
+}
+.wp-pagenavi a:active {
+	padding: 3px 5px 3px 5px; 
+	margin: 2px;
+	text-decoration: none;
+	border: 1px solid #999;
+	color: #000;
+}
+.wp-pagenavi span.pages {
+	padding: 3px 5px 3px 5px; 
+	margin: 2px 2px 2px 2px;
+	color: #000;
+
+}
+.wp-pagenavi span.current {
+	padding: 4px 6px 4px 6px; 
+	margin: 2px;
+	font-weight: bold;
+	border: 1px solid #999;
+	color: #ffffff;
+	background:#293341;
+}
+.wp-pagenavi span.extend {
+	padding: 3px 5px 3px 5px; 
+	margin: 2px;	
+	border: 1px solid #999;
+	color: #999;
+	background-color: transparent;
+}

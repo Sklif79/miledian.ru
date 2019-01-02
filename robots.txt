@@ -1,0 +1,11 @@
+User-agent: Mediapartners-Google 
+Disallow:
+
+User-agent: ia_archiver
+Disallow: /
+
+User-agent: *
+Disallow: /wp-admin
+
+Host: miledian.ru
+Sitemap: http://miledian.ru/sitemap.xml

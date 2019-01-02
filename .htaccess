@@ -1,0 +1,51 @@
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www.miledian\.ru$ [NC]
+RewriteRule ^(.*)$ http://miledian.ru/$1 [R=301,L]
+
+<Files wp-config.php>
+order allow,deny
+deny from all
+</Files>
+
+#IP ������ ����� ������, ������� ������ � �������
+<Files wp-login.php>
+order deny,allow
+allow from 46.53.225.151
+deny from all
+</Files>
+
+<Files sitemap.xml>
+allow from all
+</Files>
+
+#������ ������� � ����� � IP 298.169.132.24
+Order allow,deny
+allow from all
+#deny from 217.12.221.130
+
+
+#��������� XML-RPC
+<Files xmlrpc.php>
+order deny,allow
+deny from all
+</Files>
+
+
+Options All -Indexes
+
+<Files ~ "^.*\.([Hh][Tt][Aa])">
+order allow,deny
+deny from all
+satisfy all
+</Files>
