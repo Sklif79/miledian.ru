@@ -1,8 +1,8 @@
 === Hyper Cache ===
 Tags: cache,performance,staticizer,apache,htaccess,tuning,speed,bandwidth,optimization,tidy,gzip,compression,server load,boost
 Requires at least: 3.9
-Tested up to: 4.9.6
-Stable tag: 3.3.7
+Tested up to: 5.2.2
+Stable tag: 3.3.9
 Donate link: https://www.satollo.net/donations
 Contributors: satollo
 
@@ -44,6 +44,7 @@ Other plugins by Stefano Lissa:
 * [Newsletter](https://www.thenewsletterplugin.com)
 * [Header and Footer](https://www.satollo.net/plugins/header-footer)
 * [Include Me](https://www.satollo.net/plugins/include-me)
+* [Thumbnails](http://www.satollo.net/plugins/thumbnails)
 
 == Installation ==
 
@@ -65,6 +66,15 @@ the [Hyper Cache official forum](https://www.satollo.net/forums/forum/hyper-cach
 3. Mobile devices configuration
 
 == Changelog ==
+
+= 3.3.9 =
+
+* Added clean up of blog posts page (thanks Erich)
+
+= 3.3.8 =
+
+* Small improvement on 404 caching
+* General compatibility check with latest WP
 
 = 3.3.7 =
 

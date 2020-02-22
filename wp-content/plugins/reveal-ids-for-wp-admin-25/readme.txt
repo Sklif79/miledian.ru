@@ -3,7 +3,7 @@ Contributors: Alphawolf
 Donate link: https://www.schloebe.de/donate/
 Tags: reveal, id, wp-admin, hidden, category, post, page, media, links, capability, user, restore, comments, taxonomy, custom posts, post type, multisite, ms
 Requires at least: 3.0
-Tested up to: 4.9.999
+Tested up to: 5.3.9999
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -20,7 +20,7 @@ What this plugin does is to reveal most removed entry IDs on admin pages, showin
 
 * Sortable columns for WP 3.1 or higher
 
-[Developer on Google+](https://plus.google.com/118074611982254715031 "Developer on Google+") | [Developer on Twitter](https://twitter.com/wpseek "Developer on Twitter")
+[Developer on Twitter](https://twitter.com/wpseek "Developer on Twitter")
 
 **Included languages:**
 
@@ -53,6 +53,9 @@ None.
 1. Installation finished.
 
 == Changelog ==
+
+= 1.5.4 =
+* WordPress 5.3 compatibility
 
 = 1.5.3 =
 * Showing ID columns for plugins that register non-public post types and taxonomies

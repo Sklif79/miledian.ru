@@ -6,6 +6,7 @@ Disallow: /
 
 User-agent: *
 Disallow: /wp-admin
+Disallow: */wp-json/*
 
 Host: miledian.ru
 Sitemap: http://miledian.ru/sitemap.xml

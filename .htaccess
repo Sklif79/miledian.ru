@@ -21,7 +21,7 @@ deny from all
 #IP ������ ����� ������, ������� ������ � �������
 <Files wp-login.php>
 order deny,allow
-allow from 46.53.225.151
+allow from 86.57.192.111
 deny from all
 </Files>
 
