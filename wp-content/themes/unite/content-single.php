@@ -34,16 +34,16 @@
         for ($i = 0; $i < count($content); $i++) {
             if ($i == $paragraphAfter) { ?>
                 <!--noindex-->
-            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!--            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
             <!-- adscontentMobile -->
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-3938268256178036"
-                 data-ad-slot="6116521103"
-                 data-ad-format="auto"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
+<!--            <ins class="adsbygoogle"-->
+<!--                 style="display:block"-->
+<!--                 data-ad-client="ca-pub-3938268256178036"-->
+<!--                 data-ad-slot="6116521103"-->
+<!--                 data-ad-format="auto"></ins>-->
+<!--            <script>-->
+<!--                (adsbygoogle = window.adsbygoogle || []).push({});-->
+<!--            </script>-->
                 <!--/noindex-->
 
             <?php }
@@ -51,16 +51,16 @@
 
             if ($i == $paragraphAfter2) { ?>
                 <!--noindex-->
-            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!--            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
             <!-- adscontentMobile2 -->
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-3938268256178036"
-                 data-ad-slot="4688219901"
-                 data-ad-format="auto"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
+<!--            <ins class="adsbygoogle"-->
+<!--                 style="display:block"-->
+<!--                 data-ad-client="ca-pub-3938268256178036"-->
+<!--                 data-ad-slot="4688219901"-->
+<!--                 data-ad-format="auto"></ins>-->
+<!--            <script>-->
+<!--                (adsbygoogle = window.adsbygoogle || []).push({});-->
+<!--            </script>-->
                 <!--/noindex-->
 
 
