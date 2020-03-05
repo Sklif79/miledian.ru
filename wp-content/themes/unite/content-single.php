@@ -33,6 +33,7 @@
         $content = explode("</p>", $content);
         for ($i = 0; $i < count($content); $i++) {
             if ($i == $paragraphAfter) { ?>
+                <?php /*
                 <!--noindex-->
             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
             <!-- adscontentMobile -->
@@ -45,11 +46,12 @@
                 (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
                 <!--/noindex-->
-
+                */ ?>
             <?php }
 
 
             if ($i == $paragraphAfter2) { ?>
+        <?php /*
                 <!--noindex-->
             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
             <!-- adscontentMobile2 -->
@@ -62,7 +64,7 @@
                 (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
                 <!--/noindex-->
-
+*/ ?>
 
             <?php }
             echo $content[$i];
