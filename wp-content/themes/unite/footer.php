@@ -36,6 +36,6 @@
     });
 </script>
 <script type="text/javascript" src="//st.ad.lcads.ru/js/adv_out.js"></script>
-
+<script src="https://www.google.com/recaptcha/api.js?render=6LcvH98UAAAAACW3dCvEt8vqTzql2Qu7ehROFdC5"></script>
 </body>
 </html>

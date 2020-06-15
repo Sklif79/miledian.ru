@@ -1472,3 +1472,7 @@ textarea {
         transition-timing-function: ease-out;
     }
 }
+
+.grecaptcha-badge {
+    bottom: 120px !important;
+}

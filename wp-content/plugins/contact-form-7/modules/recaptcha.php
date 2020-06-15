@@ -14,7 +14,7 @@ function wpcf7_recaptcha_register_service() {
 	);
 }
 
-add_action( 'wp_enqueue_scripts', 'wpcf7_recaptcha_enqueue_scripts', 10, 0 );
+//add_action( 'wp_enqueue_scripts', 'wpcf7_recaptcha_enqueue_scripts', 10, 0 );
 
 function wpcf7_recaptcha_enqueue_scripts() {
 	$service = WPCF7_RECAPTCHA::get_instance();
@@ -70,59 +70,62 @@ function wpcf7_recaptcha_onload_script() {
 
 ?>
 <script type="text/javascript">
-( function( grecaptcha, sitekey, actions ) {
+    jQuery(document).ready(function () {
+        ( function( grecaptcha, sitekey, actions ) {
 
-	var wpcf7recaptcha = {
+            var wpcf7recaptcha = {
 
-		execute: function( action ) {
-			grecaptcha.execute(
-				sitekey,
-				{ action: action }
-			).then( function( token ) {
-				var forms = document.getElementsByTagName( 'form' );
+                execute: function( action ) {
+                    grecaptcha.execute(
+                        sitekey,
+                        { action: action }
+                    ).then( function( token ) {
+                        var forms = document.getElementsByTagName( 'form' );
 
-				for ( var i = 0; i < forms.length; i++ ) {
-					var fields = forms[ i ].getElementsByTagName( 'input' );
+                        for ( var i = 0; i < forms.length; i++ ) {
+                            var fields = forms[ i ].getElementsByTagName( 'input' );
 
-					for ( var j = 0; j < fields.length; j++ ) {
-						var field = fields[ j ];
+                            for ( var j = 0; j < fields.length; j++ ) {
+                                var field = fields[ j ];
 
-						if ( 'g-recaptcha-response' === field.getAttribute( 'name' ) ) {
-							field.setAttribute( 'value', token );
-							break;
-						}
-					}
-				}
-			} );
-		},
+                                if ( 'g-recaptcha-response' === field.getAttribute( 'name' ) ) {
+                                    field.setAttribute( 'value', token );
+                                    break;
+                                }
+                            }
+                        }
+                    } );
+                },
 
-		executeOnHomepage: function() {
-			wpcf7recaptcha.execute( actions[ 'homepage' ] );
-		},
+                executeOnHomepage: function() {
+                    wpcf7recaptcha.execute( actions[ 'homepage' ] );
+                },
 
-		executeOnContactform: function() {
-			wpcf7recaptcha.execute( actions[ 'contactform' ] );
-		},
+                executeOnContactform: function() {
+                    wpcf7recaptcha.execute( actions[ 'contactform' ] );
+                },
 
-	};
+            };
 
-	grecaptcha.ready(
-		wpcf7recaptcha.executeOnHomepage
-	);
+            grecaptcha.ready(
+                wpcf7recaptcha.executeOnHomepage
+            );
 
-	document.addEventListener( 'change',
-		wpcf7recaptcha.executeOnContactform, false
-	);
+            document.addEventListener( 'change',
+                wpcf7recaptcha.executeOnContactform, false
+            );
 
-	document.addEventListener( 'wpcf7submit',
-		wpcf7recaptcha.executeOnHomepage, false
-	);
+            document.addEventListener( 'wpcf7submit',
+                wpcf7recaptcha.executeOnHomepage, false
+            );
 
-} )(
-	grecaptcha,
-	'<?php echo esc_js( $service->get_sitekey() ); ?>',
-	<?php echo json_encode( $actions ), "\n"; ?>
-);
+        } )(
+            grecaptcha,
+            '<?php echo esc_js( $service->get_sitekey() ); ?>',
+            <?php echo json_encode( $actions ), "\n"; ?>
+        );
+    });
+
 </script>
 <?php
 }
